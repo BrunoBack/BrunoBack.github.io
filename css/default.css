@@ -21,7 +21,10 @@ body {
 .top-bar .player-controls span{
     cursor: pointer;
     padding: 0 5px;
-    -webkit-transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s; /* Para navegadores WebKit como Chrome e Safari */
+    -moz-transition: all linear 0.2s; /* Para navegadores Mozilla como Firefox */
+    -o-transition: all linear 0.2s; /* Para navegadores Opera */
+    transition: all linear 0.2s; /* Para outros navegadores */
 }
 .top-bar .player-controls span:hover {
     color: #EEE;
